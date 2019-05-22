@@ -6,7 +6,7 @@
 package com.microsoft.azure;
 
 import static org.junit.Assert.assertTrue;
-
+import java.nio.charset.Charset;
 import org.junit.*;
 
 
@@ -14,6 +14,7 @@ public class EncodingTest {
    @Test
    public void test1(){
        assertTrue(true);
+       System.out.println(Charset.defaultCharset());
        System.out.println("你好！");
    }
 }
